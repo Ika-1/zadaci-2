@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script src="funkcije.js"></script>
+
+<head>
+	<script src= 'https://statics.teams.cdn.office.net/sdk/v1.6.0/js/MicrosoftTeams.min.js'></script>
+	<meta charset="utf-8" />
+	<title>Matematika za drugi razred gimnazije</title>
+	<link rel='stylesheet' type='text/css' href='style.css'>
+	
+<style>
+body {
+  margin: 50;
+  background-attachment: fixed;
+  background-image: url("zelenaTabla.jpg");
+}
+
+</style>
+</head>
+
+<body>
+          <script>
+          microsoftTeams.initialize();
+          </script>
+<h2>Задаци за вежбање</h2>
+<button class="accordion tooltip" ><b>1)</b> Решити једначину по непознатој $x$: 
+$\; \frac{x+3}{x-3}+\frac{x-3}{x+3}=3 $
+  <span class="tooltiptext">Не заборави услове приликом одређивања решења једначине</span>
+</button>
+<div class="panel">
+<p><i>решење</i>:<br>
+   &emsp;&emsp;&emsp; $ \frac{x+3}{x-3}+\frac{x-3}{x+3}=3\Leftrightarrow\frac{(x+3)^2+(x-3)^2}{x^2-9}=3\Leftrightarrow\frac{(x+3)^2+(x-3)^2}{x^2-9}-3=0\Leftrightarrow\frac{(x+3)^2+(x-3)^2-3(x^2-9)}{x^2-9}=0 $
+														$\Leftrightarrow\frac{x^2+6x+9+x^2-6x+9-3x^2+27}{x^2-9}=0\Leftrightarrow\frac{-x^2+45}{x^2-9}=0\Leftrightarrow x^2=45 \wedge x^2\neq 9\Leftrightarrow |x|=\sqrt{45} \wedge |x|\neq 3\Leftrightarrow |x|=3\sqrt{5} \wedge |x|\neq 3$
+														$\Leftrightarrow \underline{x=-3\sqrt{5}\vee x=3\sqrt{5}}$
+</p>
+</div>
+<button class="accordion tooltip"><b>2)</b> Испитати природу решења квадратне једначине у зависности од $m\in R$: $\; 5m^4x^2-6m^2x+2=0$.<br/>
+	<span class="tooltiptext">Природа решења квадратне једначине утврђује се на основу знака дискриминанте</span>
+</button>
+<div class="panel">
+  <p><i>решење</i>:  Коефицијенти квадратног тринома су $a=5m^4$, $b=-6m^2$ и $c=2$. Први услов, према дефиницији квадратне једначине, је $a\neq 0$, тј. $m\neq 0$, затим, израчунајмо дискриминанту једначине: $\overline{D}=(-6m^2)^2-8\cdot 5m^4=36m^4-40m^4=-4m^4$.<br>
+                	 Пошто је $\overline{D}\lt 0$ за све $m\neq 0$, онда су <ins>решења једначине увек комплексни бројеви</ins>. </p>
+</div>
+<button class="accordion tooltip"><b>3)</b> Ако су $\alpha$ и $\beta$ решења једначине $x^2-7x+9=0$, израчунати $(\alpha - \beta)^2$ и $\alpha^4 + \beta^4$.
+	<span class="tooltiptext">За решење овог задатка користе се Вијетеове формуле</span>
+</button>
+<div class="panel">
+  <p><i>решење</i>: Коефицијенти једначине су $a=1$, $b=-7$ и $c=9$. Применом Вијетеових формула 
+  	$\left\{\begin{array}{c} \alpha + \beta = -\frac{b}{a}\\
+  	  \alpha \beta = \frac{c}{a}\end{array}\right\}$ имамо $\left\{\begin{array}{c} \alpha + \beta = 7\\
+  	  \alpha \beta = 9\end{array}\right\}$. Затим, $(\alpha - \beta)^2 = \alpha^2 - 2\alpha \beta + \beta^2 = \alpha^2 + 2\alpha \beta + \beta^2 - 4\alpha \beta = (\alpha + \beta)^2 - 4\alpha \beta = 7^2 - 36 \underline{= 13}$.<br>
+  	  $\alpha^4 + \beta^4 = \alpha^4 + 2\alpha^2 \beta^2 + \beta^4 - 2\alpha^2 \beta^2 = (\alpha^2 + \beta^2)^2 - 2\alpha^2 \beta^2 = ((\alpha + \beta)^2 - 2\alpha \beta)^2 - 2(\alpha\beta)^2 = (7^2 - 18)^2 - 2\cdot 81 = 31^2 - 162 = 961 - 162 \underline{= 799}$.</p>
+</div>
+<button class="accordion tooltip"><b>4)</b>  Саставити бар једну квадратну једначину чија су решења $x_1 = 2,3$ и $x_2 = -0,5$.
+    <span class="tooltiptext">Користи се формула за квадратну једначину приказану преко њених решења;&emsp; $a(x^2-(x_1+x_2)x+x_1x_2)=0$&emsp;</span> 
+</button>
+<div class="panel">
+  <p><i>решење</i>: Према формули за квадратну једначину изражену преко њених решења<br>   
+  	$a(x^2 - (x_1 + x_2)x +x_1x_2) = 0$, имамо, $a(x^2 - (2,3 - 0,5)x - 2,3\cdot 0,5) = 0$, тј.<br>
+  	$\underline{a(x^2 - 1,8x - 1,15) = 0}$, $a\neq 0$.
+  	</div>
+<button class="accordion tooltip"><b>5)</b> Решити једначину: $x^2 - \frac{50}{2x^2+7} = 7$.
+	<span class="tooltiptext">Ово је једначина која се своди на квадратну једначину</span> 
+</button>
+<div class="panel">
+  <p><i>решење</i>: $x^2 - \frac{50}{2x^2+7} = 7\Leftrightarrow x^2(2x^2+7)-50=7(2x^2+7) \wedge 2x^2+7\neq 0, $ за све $x\in R$.<br>
+  	$\Leftrightarrow 2x^4+7x^2-50=14x^2+49\Leftrightarrow 2x^4-7x^2-99=0$. За решавање биквадратне једначине уводимо замену $x^2=z$, тако да је $\Leftrightarrow 2z^2-7z-99=0$, <br>
+    $z_{1,2}=\frac{7\pm\sqrt{49+8\cdot 99}}{4}=\frac{7\pm\sqrt{841}}{4}=\frac{7\pm 29}{4}$, тј. $z=9\vee z=-\frac{11}{2}$. Враћамо се на замену, $x^2=9\vee x^2=-\frac{11}{2}$<br>
+    $\Leftrightarrow |x|=3\vee |x|=i\sqrt{\frac{11}{2}}\Leftrightarrow \underline{x=3\vee x=-3\vee x=i\sqrt{\frac{11}{2}}\vee x=-i\sqrt{\frac{11}{2}}}$.
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function()
+    { this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    };
+}
+</script>
+
+</body>
+</html>

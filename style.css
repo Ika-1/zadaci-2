@@ -1,0 +1,81 @@
+
+button.accordion {
+    background-color: #72d26c;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border-color: #bdc86f ;
+    text-align: left;
+    outline: none;
+    font-family:"Times New Roman";
+    font-size: 12px;
+    transition: 0.4s;
+    border-radius:5px 5px 5px 5px;
+}
+
+button.accordion.active, button.accordion:hover .tooltiptext{
+    opacity: 0.7; 
+    visibility: visible;
+}
+
+div.panel {
+    padding: 0 20px;
+    display: none;
+    font-size: 25px;
+    color: white;
+    background-color: #3f7535;
+    border-radius:5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #b57240;
+    border-bottom-color: #bb633e;
+    border-right-color:#BB633E;
+    outline: none; 
+    
+}
+p {
+	padding: 10px;
+    margin: 10px;
+    font-size:12px;
+    text-align: left
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    font-size:9px;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
